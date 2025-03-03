@@ -1,0 +1,141 @@
+/*
+ Theme Name: Portfolio Theme 1
+ Author: Thomas Burnside
+ Description: A custom portfolio theme for practice.
+ Version: 1.0
+*/
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #e2e2e2;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: "Libre Baskerville", serif;
+}
+
+a{
+    text-decoration: none;
+    color: #202020;
+}
+
+.header{
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo{
+    text-align: center;
+}
+
+html{
+    margin-top: 0 !important;
+}
+
+.main-nav{
+    background-color: #efefef;
+}
+
+
+article{
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.project-article{
+    text-align: left !important;
+    padding: 40px;
+}
+
+footer{
+    text-align: center;
+}
+
+pre{
+    text-align: left !important;
+    background-color: #efefef;
+    padding: 10px;
+}
+.anchor-link, .project-terms{
+    color: #008080 !important;
+}
+
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 0px;
+    text-align: left;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    column-gap: 20px;
+    row-gap: 0; /* Space between grid items */
+    margin: 0px;
+    width: 100%;
+}
+
+.project-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #202020;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item a {
+    color: #008080;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.featured-image{
+    width: 100% !important;
+}
+
+.grid-title, .grid-terms{
+    color: #202020;
+}
+
+pre {
+    white-space: pre-wrap; 
+    overflow-x: auto;      
+    word-wrap: break-word; 
+}
+
+code {
+    display: block;        
+    white-space: inherit;  
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
